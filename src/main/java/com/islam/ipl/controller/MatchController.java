@@ -1,2 +1,4 @@
-package com.islam.ipl.controller;public class MatchController {
+package com.islam.ipl.controller;
+
+public class MatchController {
 }
