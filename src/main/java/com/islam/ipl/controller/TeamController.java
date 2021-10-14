@@ -45,4 +45,10 @@ public class TeamController {
         List<Match> matches = matchRepository.findMatchesForTeamByYear(teamName, year);
         return Flux.fromIterable(matches).log();
     }
+
+    @GetMapping("/teams")
+    public Flux<Team> getAllTeams()
+    {
+        return Flux.fromIterable(teamRepository.findAll());
+    }
 }
